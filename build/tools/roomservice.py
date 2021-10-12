@@ -45,7 +45,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/orgasmic_manifest.xml"
-custom_default_revision = "fire"
+custom_default_revision = "twelve"
 custom_dependencies = "orgasmic.dependencies"
 org_manifest = "devices"  # leave empty if org is provided in manifest
 org_display = "Orgasmic-Devices"  # needed for displaying
