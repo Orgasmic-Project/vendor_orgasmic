@@ -122,7 +122,7 @@ include vendor/orgasmic/config/version.mk
 # Packages
 include vendor/orgasmic/config/packages.mk
 
-ifeq ($(TARGET_INCLUDE_GAPPS), true)
+ifeq ($(WITH_GAPPS), true)
 # GApps
 include vendor/gms/products/gms.mk
 endif
