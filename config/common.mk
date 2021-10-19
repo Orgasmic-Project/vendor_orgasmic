@@ -78,7 +78,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Gapps
-$(call inherit-product, vendor/spark/config/gapps.mk)
+$(call inherit-product, vendor/orgasmic/config/gapps.mk)
 
 # Include AOSP audio files
 #include vendor/orgasmic/config/aosp_audio.mk
