@@ -14,12 +14,12 @@
 # limitations under the License.
 
 # Versioning System
-ORGASMIC_CODENAME := Ember
-ORGASMIC_NUM_VER := 2.0
+ORGASMIC_CODENAME := Amber
+ORGASMIC_NUM_VER := 0.1
 
 TARGET_PRODUCT_SHORT := $(subst orgasmic_,,$(ORGASMIC_BUILD_TYPE))
 
-ORGASMIC_BUILD_TYPE ?= UNOFFICIAL
+ORGASMIC_BUILD_TYPE ?= OFFICIALE
 
 # Only include Updater for official, weeklies, CI and nightly builds
 ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(ORGASMIC_BUILD_TYPE)),)
@@ -27,10 +27,10 @@ ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(ORGASMIC_BUILD_TYPE)),)
         Updater
 endif
 
-# Sign builds if building an official, weekly, CI and nightly build
-ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(ORGASMIC_BUILD_TYPE)),)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := $(KEYS_LOCATION)
-endif
+# # Sign builds if building an official, weekly, CI and nightly build
+# ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(ORGASMIC_BUILD_TYPE)),)
+#     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(KEYS_LOCATION)
+# endif
 
 # Set all versions
 BUILD_DATE := $(shell date -u +%Y%m%d)
