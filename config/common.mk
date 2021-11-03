@@ -2,6 +2,8 @@
 $(call inherit-product, vendor/orgasmic/config/audio.mk)
 $(call inherit-product-if-exists, vendor/extras/product.mk)
 $(call inherit-product, vendor/orgasmic/config/bootanimation.mk)
+$(call inherit-product, vendor/orgasmic/fonts/fonts.mk)
+$(call inherit-product, vendor/orgasmic/overlay/overlay.mk)
 PRODUCT_BRAND ?= Orgasmic
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
